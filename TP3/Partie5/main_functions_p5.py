@@ -34,7 +34,7 @@ def bruit_seg_all(img):
 
         mv_images.append(classif_gauss2(noised_signals[-1], params))
         map_images.append(MAP_MPM(noised_signals[-1], params))
-        mpm_images.append(MPM_chaines2_with_rescaling(mat_f, params['cl1'], params['cl2'], params['A'], params['a']))
+        mpm_images.append(MPM_chaines2_with_rescaling(mat_f, params))
 
     return mv_images, map_images, mpm_images
 

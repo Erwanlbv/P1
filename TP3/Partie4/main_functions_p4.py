@@ -64,22 +64,24 @@ def backward2(mat_f, A):
     return beta
 
 
-def MPM_chaines2(mat_f, cl1, cl2, A, p10):
+def MPM_chaines2(mat_f, params):
     mpm_seg = np.zeros(len(mat_f))
     mpm_seg[:] = np.where(
-        forward2(mat_f, A, p10)[:, 0]*backward2(mat_f, A)[:, 0] >= forward2(mat_f, A, p10)[:, 1]*backward2(mat_f, A)[:, 1],
-        cl1,
-        cl2
+        forward2(mat_f, params['A'], params['a'])[:, 0]*backward2(mat_f, params['A'])[:, 0] >=
+        forward2(mat_f, params['A'], params['a'])[:, 1]*backward2(mat_f, params['A'])[:, 1],
+        params['cl1'],
+        params['cl2']
     )
     return mpm_seg
 
 
-def MPM_chaines2_with_rescaling(mat_f, cl1, cl2, A, p10):
+def MPM_chaines2_with_rescaling(mat_f, params):
     mpm_seg = np.zeros(len(mat_f))
     mpm_seg[:] = np.where(
-        forward_with_rescaling(mat_f, A, p10)[:, 0]*backward_with_rescaling(mat_f, A)[:, 0] >= forward_with_rescaling(mat_f, A, p10)[:, 1]*backward_with_rescaling(mat_f, A)[:, 1],
-        cl1,
-        cl2
+        forward_with_rescaling(mat_f, params['A'], params['a'])[:, 0]*backward_with_rescaling(mat_f, params['A'])[:, 0] >=
+        forward_with_rescaling(mat_f, params['A'], params['a'])[:, 1]*backward_with_rescaling(mat_f,  params['A'])[:, 1],
+        params['cl1'],
+        params['cl2']
     )
     return mpm_seg
 

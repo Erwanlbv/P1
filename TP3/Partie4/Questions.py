@@ -19,7 +19,7 @@ def question5():
     markov_chain = genere_chaine2(50, params)
     noised_markov_chain = bruit_gaussien(markov_chain, params)
 
-    mpm_seg = MPM_chaines2(gauss2(noised_markov_chain, params), 100, 200, params['A'], params['a'])
+    mpm_seg = MPM_chaines2(gauss2(noised_markov_chain, params), params)
 
     fig, axs = plt.subplots(2, 1, figsize=(16, 9))
     fig.suptitle("Segmentation MPM2 \n Taux d'erreur : " + str(taux_erreur(markov_chain, mpm_seg)))

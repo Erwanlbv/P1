@@ -27,7 +27,7 @@ def display(name):
     plt.show()
 
 
-def test(img):
+def test(img): #Fonction pour tester la fonctionnalité du programme sur une image
     X_ch = image_to_chain(img)
     params = setParams(all_params[0], X_ch)
     params['a'] = np.random.rand()
@@ -37,7 +37,8 @@ def test(img):
     map_img = chain_to_image(MAP_MPM(noised_img, params))
 
     mat_f = gauss2(noised_img, params)
-    mpm_img = chain_to_image(MPM_chaines2_with_rescaling(mat_f, params['cl1'], params['cl2'], calc_transit_prio2(X_ch), params['a']))
+    params['A'] = calc_transit_prio2(X_ch)
+    mpm_img = chain_to_image(MPM_chaines2_with_rescaling(mat_f, params))
 
     fig, axs = plt.subplots(1, 4, figsize=(16, 9), sharex=True, sharey=True)
     fig.suptitle("Test")
