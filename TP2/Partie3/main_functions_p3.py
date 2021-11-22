@@ -16,7 +16,7 @@ def genere_chaine2(n, params): # Question 2
     for i in range(1, n):
         chain.append(
             (chain[i-1] == params['cl1']) * tirage_classe2(params['A'][0][0], params['cl1'], params['cl2']) +
-            (chain[i - 1] == params['cl2']) * tirage_classe2(params['A'][1][0], params['cl1'], params['cl2'])
+            (chain[i-1] == params['cl2']) * tirage_classe2(params['A'][1][0], params['cl1'], params['cl2'])
         )
     return np.array(chain)
 
