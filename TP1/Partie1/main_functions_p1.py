@@ -3,7 +3,8 @@ import matplotlib.pyplot as plt
 import scipy.stats as stats
 
 
-from Programmes_Annexes.set_params import *
+from Programmes_Annexes.set_params import * 
+#SetParams permet de regrouper tous les paramètres utiles (cl1? cl2, m1, m2, sig1, sig2) dans une même variable pour éviter d'avoir des défintions de fonctions à rallonge
 
 
 def bruit_gaussien(X, params):
