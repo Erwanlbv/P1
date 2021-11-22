@@ -31,13 +31,14 @@ def test(img): #Fonction pour tester la fonctionnalité du programme sur une ima
     X_ch = image_to_chain(img)
     params = setParams(all_params[0], X_ch)
     params['a'] = np.random.rand()
+    params['A'] = calc_transit_prio2(X_ch)
     noised_img = bruit_gaussien(X_ch, params)
 
     mv_img = chain_to_image(classif_gauss2(noised_img, params))
     map_img = chain_to_image(MAP_MPM(noised_img, params))
 
     mat_f = gauss2(noised_img, params)
-    params['A'] = calc_transit_prio2(X_ch)
+
     mpm_img = chain_to_image(MPM_chaines2_with_rescaling(mat_f, params))
 
     fig, axs = plt.subplots(1, 4, figsize=(16, 9), sharex=True, sharey=True)
