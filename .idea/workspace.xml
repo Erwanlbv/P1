@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d054298a-667a-49b8-a0eb-2f3a3089cfef" name="Changes" comment="Suppression calcl_transit_prio_2 dans p4">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP3/Partie4/Questions.py" beforeDir="false" afterPath="$PROJECT_DIR$/TP3/Partie4/Questions.py" afterDir="false" />
+    <list default="true" id="d054298a-667a-49b8-a0eb-2f3a3089cfef" name="Changes" comment="Mise à jour des fonctions Partie 4 et 5 après nouvelle structure">
+      <change beforePath="$PROJECT_DIR$/TP2/Partie3/main_functions_p3.py" beforeDir="false" afterPath="$PROJECT_DIR$/TP2/Partie3/main_functions_p3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP3/Partie4/main_functions_p4.py" beforeDir="false" afterPath="$PROJECT_DIR$/TP3/Partie4/main_functions_p4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP3/Partie5/Questions.py" beforeDir="false" afterPath="$PROJECT_DIR$/TP3/Partie5/Questions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP3/Partie5/main_functions_p5.py" beforeDir="false" afterPath="$PROJECT_DIR$/TP3/Partie5/main_functions_p5.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -293,7 +290,7 @@
       <workItem from="1636982058297" duration="11287000" />
       <workItem from="1637142685572" duration="18812000" />
       <workItem from="1637323740175" duration="13101000" />
-      <workItem from="1637345123857" duration="36353000" />
+      <workItem from="1637345123857" duration="36695000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout du readme.md">
       <created>1637590845287</created>
@@ -323,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637615723476</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Mise à jour des fonctions Partie 4 et 5 après nouvelle structure">
+      <created>1637621584672</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1637621584672</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -345,7 +349,8 @@
     <MESSAGE value="Mise à jour main_function_p4 et comp_A_emp" />
     <MESSAGE value="Déplacement de comp_A_emp dans Programme annexe" />
     <MESSAGE value="Suppression calcl_transit_prio_2 dans p4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Suppression calcl_transit_prio_2 dans p4" />
+    <MESSAGE value="Mise à jour des fonctions Partie 4 et 5 après nouvelle structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mise à jour des fonctions Partie 4 et 5 après nouvelle structure" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/P1$affichage_longueur.coverage" NAME="affichage_longueur Coverage Results" MODIFIED="1637582702297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
