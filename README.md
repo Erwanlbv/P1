@@ -2,7 +2,7 @@
 
 ### But
 
-Ce TP rendu en trois parties propose une mise en pratique simple des théories présentées dans le cours d'Inférence Bayésienne de deuxième année de Télécom SudParis. 
+Ce TP séparé en trois parties propose une mise en pratique simple des théories présentées dans le cours d'Inférence Bayésienne de deuxième année de Télécom SudParis. 
 Il repose sur l'apprentissage des trois algorithmes les plus classiques de segmentation dans ce cadre, à savoir : 
   - Maximum de vraisemblance
   - Maximum de vraisemblance a posteriori, suivi d'une critique sur la méthode d'estimation de la loi a priori de X
