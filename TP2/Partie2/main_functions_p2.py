@@ -32,9 +32,9 @@ def calc_transit_prio2(X):
     return np.array([[a, 1-a], [1-b, b]])
 
 
-def calc_probas_prio(n, A, a):
+def calc_probas_prio(n, A, a): #Fonctions pour calcule les probabilités P(X_n = w_1) et P(X_n = w2) (de manière recursive) où n décrit l'ensemble des points du signal 
     probas = np.zeros((n, 2))
-    probas[0] = np.array([[a, 1-a]])
+    probas[0] = np.array([[a, 1-a]]) #Probabilité de la racine
 
     for i in range(n):
         probas[i, 0] = probas[i-1, 0]*A[0][0] + probas[i-1, 1]*A[1][0]
@@ -43,14 +43,14 @@ def calc_probas_prio(n, A, a):
     return probas
 
 
-def MAP_MPM(Y, params): #Question 1
+def MAP_MPM(Y, params): #Loi a priori de X estimée de manière empirique
     return (
             (stats.norm.pdf(Y, params['m1'], params['sig1'])*params['a'] >= stats.norm.pdf(Y, params['m2'], params['sig2'])*(1-params['a']))*params['cl1'] +
             (stats.norm.pdf(Y, params['m1'], params['sig1'])*params['a'] < stats.norm.pdf(Y, params['m2'], params['sig2'])*(1-params['a']))*params['cl2']
             )
 
 
-def MAP_MPM_Markov(Y, probas, params):
+def MAP_MPM_Markov(Y, probas, params): #Loi a priori de X estimée à partir des propriétés des chaînes de Markov
     seg_signal = np.zeros((len(Y)))
     seg_signal[:] = np.where(
         (stats.norm.pdf(Y, params['m1'], params['sig1'])[:]*probas[:, 0] >= stats.norm.pdf(Y, params['m2'], params['sig2'])[:]*probas[:, 1]),
