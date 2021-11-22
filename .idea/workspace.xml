@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d054298a-667a-49b8-a0eb-2f3a3089cfef" name="Changes" comment="Mise à jour des fonctions Partie 4 et 5 après nouvelle structure">
+    <list default="true" id="d054298a-667a-49b8-a0eb-2f3a3089cfef" name="Changes" comment="Test genere_chaine2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP2/Partie3/main_functions_p3.py" beforeDir="false" afterPath="$PROJECT_DIR$/TP2/Partie3/main_functions_p3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP3/Partie4/main_functions_p4.py" beforeDir="false" afterPath="$PROJECT_DIR$/TP3/Partie4/main_functions_p4.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +60,7 @@
       <recent name="$PROJECT_DIR$/TP2/Partie3" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.affichage_longueur">
+  <component name="RunManager" selected="Python.main_functions_p3">
     <configuration name="CalculAire" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="P1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -237,6 +237,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="main_functions_p3" type="PythonConfigurationType" factoryName="Python">
+      <module name="P1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/.conda/envs/P1/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TP2/Partie3/main_functions_p3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="P1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -267,6 +289,7 @@
       <item itemvalue="Python.Partie5" />
       <item itemvalue="Python.Questions" />
       <item itemvalue="Python.affichage_longueur" />
+      <item itemvalue="Python.main_functions_p3" />
       <item itemvalue="Python.main_functions_p1" />
       <item itemvalue="Python.main_functions_p2" />
     </list>
@@ -290,7 +313,7 @@
       <workItem from="1636982058297" duration="11287000" />
       <workItem from="1637142685572" duration="18812000" />
       <workItem from="1637323740175" duration="13101000" />
-      <workItem from="1637345123857" duration="36695000" />
+      <workItem from="1637345123857" duration="37293000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout du readme.md">
       <created>1637590845287</created>
@@ -327,7 +350,21 @@
       <option name="project" value="LOCAL" />
       <updated>1637621584672</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Mise à jour des fonctions Partie 4 et 5 après nouvelle structure">
+      <created>1637621894463</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1637621894463</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Test genere_chaine2">
+      <created>1637621985413</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1637621985413</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,7 +387,8 @@
     <MESSAGE value="Déplacement de comp_A_emp dans Programme annexe" />
     <MESSAGE value="Suppression calcl_transit_prio_2 dans p4" />
     <MESSAGE value="Mise à jour des fonctions Partie 4 et 5 après nouvelle structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mise à jour des fonctions Partie 4 et 5 après nouvelle structure" />
+    <MESSAGE value="Test genere_chaine2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test genere_chaine2" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/P1$affichage_longueur.coverage" NAME="affichage_longueur Coverage Results" MODIFIED="1637582702297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -361,6 +399,7 @@
     <SUITE FILE_PATH="coverage/P1$partie2.coverage" NAME="partie2 Coverage Results" MODIFIED="1637442035717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/P1$Questions.coverage" NAME="Questions Coverage Results" MODIFIED="1637571302239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TP1/Partie1" />
     <SUITE FILE_PATH="coverage/P1$main.coverage" NAME="main Coverage Results" MODIFIED="1636062159687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/P1$main_functions_p3.coverage" NAME="main_functions_p3 Coverage Results" MODIFIED="1637622475594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/P1$Partie4.coverage" NAME="Partie4 Coverage Results" MODIFIED="1637509334180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/P1$test.coverage" NAME="test Coverage Results" MODIFIED="1635438502450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/P1$partieII.coverage" NAME="parti_eII Coverage Results" MODIFIED="1635430195210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
