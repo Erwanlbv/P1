@@ -84,15 +84,6 @@ def MPM_chaines2_with_rescaling(mat_f, cl1, cl2, A, p10):
     return mpm_seg
 
 
-def calc_transit_prio2(X):
-    if len(np.unique(X, return_counts=True)[1]) == 1:
-        return np.where(100 in X, np.array([[1, 0], [0, 0]]), np.array([[0, 0], [0, 1]]))
-
-    cl1, cl2, count1, count2 = np.unique(X)[0], np.unique(X)[1], np.unique(X, return_counts=True)[1][0], np.unique(X, return_counts=True)[1][1]
-    a, b = np.sum((X[:-1] == cl1) & (X[1:] == cl1))/(count1), np.sum((X[:-1] == cl2) & (X[1:] == cl2))/(count2)
-    return np.array([[a, 1-a], [1-b, b]])
-
-
 
 
 
