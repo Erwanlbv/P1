@@ -38,6 +38,18 @@ def forward_with_rescaling(mat_f, A, p10):
     return alpha_star
 
 
+
+def backward2(mat_f, A):
+    beta = np.zeros((len(mat_f), 2))
+    beta[-1] = np.array([[1, 1]])
+
+    for i in range(len(mat_f)-1):
+        beta[-2-i][0] = beta[-i-1, 0]*mat_f[-i-1, 0]*A[0][0] + beta[-i-1, 1]*mat_f[-i-1, 1]*A[0][1]
+        beta[-2-i][1] = beta[-i-1, 0]*mat_f[-i-1, 0]*A[1][0] + beta[-i-1, 1]*mat_f[-i-1, 1]*A[1][1]
+
+    return beta
+
+
 def backward_with_rescaling(mat_f, A):
     beta = np.zeros((len(mat_f), 2))
     beta_star = np.zeros((len(mat_f), 2))
@@ -51,17 +63,6 @@ def backward_with_rescaling(mat_f, A):
         beta_star[-2-i] = beta[-2-i]/np.sum(beta[-2-i])
 
     return beta_star
-
-
-def backward2(mat_f, A):
-    beta = np.zeros((len(mat_f), 2))
-    beta[-1] = np.array([[1, 1]])
-
-    for i in range(len(mat_f)-1):
-        beta[-2-i][0] = beta[-i-1, 0]*mat_f[-i-1, 0]*A[0][0] + beta[-i-1, 1]*mat_f[-i-1, 1]*A[0][1]
-        beta[-2-i][1] = beta[-i-1, 0]*mat_f[-i-1, 0]*A[1][0] + beta[-i-1, 1]*mat_f[-i-1, 1]*A[1][1]
-
-    return beta
 
 
 def MPM_chaines2(mat_f, cl1, cl2, A, p10):
