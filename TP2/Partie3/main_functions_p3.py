@@ -11,10 +11,9 @@ def tirage_classe2(p1, cl1, cl2): # Question 1
 
 
 def genere_chaine2(n, params): # Question 2
-    chain = []
-    chain.append(tirage_classe2(params['a'], params['cl1'], params['cl2']))
+    chain = [tirage_classe2(params['a'], params['cl1'], params['cl2'])]
 
-    for i in range(0, n):  # Idem pour cette boucle
+    for i in range(0, n):
         chain.append(
             (chain[i-1] == params['cl1']) * tirage_classe2(params['A'][0][0], params['cl1'], params['cl2']) +
             (chain[i - 1] == params['cl2']) * tirage_classe2(params['A'][1][0], params['cl1'], params['cl2'])
