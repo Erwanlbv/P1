@@ -14,8 +14,7 @@ X = np.load("../../assets/signaux/signal.npy")
 params = setParams(all_params[1], X)
 Y = classif_gauss2(bruit_gaussien(X, params), params)
 
-print('A')
-fig, axs = plt.subplots(2)
+fig, axs = plt.subplots(2, 1, figsize=(16, 9))
 fig.suptitle('Résultats')
 
 axs[0].set_title('Initial Signal')
@@ -24,10 +23,10 @@ axs[0].plot(X, color='blue')
 axs[1].set_title('Processed Signal')
 axs[1].plot(Y, color='orange')
 
-for ax in axs.flat: #Pour éviter que les titres et les abscisses se chevauchent
+for ax in axs.flat: #Pour éviter que les titres et les abscisses ne se chevauchent
     ax.label_outer()
 
-T = np.linspace(1, 500, 500)
+T = np.linspace(1, 500, 500) # Erreur moyenne sur 1 à 500 segmentations
 result = getResult(T, X, params)
 plt.plot(T, result, color='blue')
 plt.show()
