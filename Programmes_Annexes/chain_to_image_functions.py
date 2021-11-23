@@ -5,8 +5,9 @@ Uses the package https://github.com/galtay/hilbertcurve
 2020 Hugo Gangloff
 '''
 import numpy as np
-from hilbertcurve import HilbertCurve
+from Programmes_Annexes.hilbertcurve import HilbertCurve
 import matplotlib.pyplot as plt
+
 
 def get_hilbertcurve_path(image_border_length):
     '''

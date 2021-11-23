@@ -72,7 +72,7 @@ def simul2(n, params): # Question 3
 
 #Etude supplémentaire, sur la qualité de l'estimateur empirique pour A
 
-def ep_vs_cm():
+def ep_vs_cm_signal():
     result = []
     all_params = [
         [120, 130, 1, 2],
@@ -84,7 +84,7 @@ def ep_vs_cm():
 
     for i in range(6):
         if i == 0:
-            X = np.load('../../assets/signaux/signal.npy')
+            X = np.load('assets/signaux/signal.npy')
         else:
             X = np.load('assets/signaux/signal' + str(i) + '.npy')
 

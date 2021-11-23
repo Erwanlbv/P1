@@ -20,7 +20,7 @@ def bruit_seg_all(img):
     X_ch = image_to_chain(img)
     A = calc_transit_prio2(X_ch)
 
-    noised_signals = []
+    noised_images = []
     mv_images = []
     map_images = []
     mpm_images = []
@@ -29,14 +29,14 @@ def bruit_seg_all(img):
         params = setParams(all_params[i], X_ch)
         params['A'] = A
         params['a'] = all_a[i]
-        noised_signals.append(bruit_gaussien(X_ch, params))
-        mat_f = gauss2(noised_signals[-1], params)
+        noised_images.append(bruit_gaussien(X_ch, params))
+        mat_f = gauss2(noised_images[-1], params)
 
-        mv_images.append(classif_gauss2(noised_signals[-1], params))
-        map_images.append(MAP_MPM(noised_signals[-1], params))
+        mv_images.append(classif_gauss2(noised_images[-1], params))
+        map_images.append(MAP_MPM(noised_images[-1], params))
         mpm_images.append(MPM_chaines2_with_rescaling(mat_f, params))
 
-    return mv_images, map_images, mpm_images
+    return noised_images, mv_images, map_images, mpm_images
 
 
 
